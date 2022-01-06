@@ -29,3 +29,5 @@ id	url	        user_id
 --     url VARCHAR(200),
 --     user_id int FOREIGN KEY REFERENCES users(id)
 -- );
+
+-- IN POSTGRES NO NEED TO TYPE FOREGIN KEY WORD BUT IN MYSQL WE HAVE TO MENTION IT.
