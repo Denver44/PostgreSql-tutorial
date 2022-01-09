@@ -14,14 +14,15 @@ VALUES
   ('Sao Paulo', 'Brzail', 20935000, 3043);
 
 
-UPDATE cities SET population = 39505000 WHERE name="Tokyo"
+SELECT * FROM cities
+DELETE FROM cities WHERE name = 'Tokyo'  -- IT WILL DELETE THE ROW WHERE THE NAME IS TOKYO
 
 SELECT * FROM cities
-
-
-DELETE FROM cities WHERE name = 'Tokyo'
-SELECT * FROM cities
-
 DELETE FROM cities WHERE country = 'India' ;
 
-SELECT * FROM phones;
+SELECT * FROM cities
+
+
+-- KEWYORD
+-- DELETE
+-- DELETE : THIS KEYWORD HELPS TO DELETE A ROW

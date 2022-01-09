@@ -5,12 +5,7 @@ CREATE TABLE cities (
   area INTEGER
 );
 
--- KEYWORD
--- 1. CREATE
--- 2. TABLE
-
-
+-- KEYWORDS :-  1. CREATE   2. TABLE
 -- CREATE Keyword helps us to craete a table and here we have created a Table name cities 
 -- To create columns for our Table we have to name the coulumn in open and close brackets ()
-
 -- VARCHAR (50) means it will contains string whose lenght will be 50.

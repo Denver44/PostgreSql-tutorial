@@ -1,7 +1,4 @@
-
-
-
- CREATE TABLE cities (
+CREATE TABLE cities (
   name VARCHAR(50),
   country VARCHAR(50),
   population INTEGER,
@@ -16,20 +13,7 @@ VALUES
   ('Shanghai', 'China', 22125000, 4015),
   ('Sao Paulo', 'Brzail', 20935000, 3043);
 
-
-SELECT * FROM cities
-SELECT name,  area FROM  cities
-SELECT  country, name, area, population,  country FROM cities
-SELECT  country, name,  population / area AS population_density FROM cities
-
-SELECT
-  country || name,
-  CONCAT(name, country),
-  LOWER(country),
-  UPPER(name),
-  LENGTH(NAME),
-FROM
-  cities
+SELECT  country || name,  CONCAT(name, country),  LOWER(country),  UPPER(name),  LENGTH(NAME), FROM  cities
 
   
 SELECT
@@ -42,3 +26,11 @@ SELECT
   population / area AS population_density
 FROM
   cities
+
+
+-- FUNCTIONS
+  -- CONCAT
+  -- LOWER
+  -- UPPER 
+  -- LENGTH
+-- THIS ARE THE FUNCTION WHICH WE CAN APPLY ON THE CLOUMN IN SELECT STATEMENT
