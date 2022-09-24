@@ -4,7 +4,7 @@ CREATE TABLE photos(
   user_id INTEGER REFERENCES users(id) 
 );
 
--- THis will be OKay as we insert a photo  thta ois tied to a user that exists
+-- THis will be Oaky as we insert a photo  thats is tied to a user that exists
 
 INSERT INTO
   photos(url, user_id)

@@ -28,10 +28,5 @@ SELECT name,area FROM cities WHERE area != 8233
 SELECT name,area FROM cities WHERE area <> 8233
 
 
-
--- WHERE KEYWORD is used to filter data
--- The execeution of the baove statements is like
-
--- 1. FROM cities (execute)
--- 2. WHERE area > 4000 (execute)
--- 3. SELECT name,area (execute)
+-- KEYWORDS
+-- WHERE is used to filter data

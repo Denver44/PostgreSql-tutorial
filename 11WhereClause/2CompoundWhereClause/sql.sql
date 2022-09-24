@@ -27,5 +27,13 @@ SELECT name,area FROM cities WHERE area NOT IN (3043, 4015) OR name in ('Delhi')
 
 SELECT name, population / area as population_density FROM cities WHERE population / area > 6000;
 
--- We can do calculations in WHERE Cluase also.
+-- KEYWORDS
+-- 1.AND
+-- 2.OR
+-- 3. BETWEEN
+-- 4. NOT IN
+-- 5. IN
+-- There are many more 
+-- We can do calculations in WHERE Clause also.
 -- We can add all mathematical and string operators operation in WHERE
+
