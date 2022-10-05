@@ -14,26 +14,28 @@ VALUES
   ('Sao Paulo', 'Brzail', 20935000, 3043);
 
 
+------------------------------------------------- COMPOUND WHERE CLAUSE --------------------------------------------------------
 
--- COMPOUND WHERE CLAUSE
+-- KEYWORDS : 1.AND  2.OR  3. BETWEEN  4. NOT IN  5. IN, etc...
+-- We can do calculations in WHERE Clause also.
+-- We can add all mathematical and string operators operation in WHERE
+
 SELECT name,area FROM cities WHERE area BETWEEN 2000 AND 3000
 
 SELECT name,area FROM cities WHERE name IN ('Delhi', 'Shanghai')
+
 SELECT name,area FROM cities WHERE name NOT IN ('Delhi', 'Shanghai')
+
 SELECT name,area FROM cities WHERE area NOT IN (3043, 5600) AND name = 'Delhi';
-SELECT name,area FROM cities WHERE area NOT IN (3043, 5600) AND name in ('Delhi', 'Sao Paulo');
-SELECT name,area FROM cities WHERE area NOT IN (3043, 5600) OR name in ('Delhi', 'Sao Paulo');
+
 SELECT name,area FROM cities WHERE area NOT IN (3043, 4015) OR name in ('Delhi');
+
+SELECT name,area FROM cities WHERE area NOT IN (3043, 5600) AND name in ('Delhi', 'Sao Paulo');
+
+SELECT name,area FROM cities WHERE area NOT IN (3043, 5600) OR name in ('Delhi', 'Sao Paulo');
+
 
 SELECT name, population / area as population_density FROM cities WHERE population / area > 6000;
 
--- KEYWORDS
--- 1.AND
--- 2.OR
--- 3. BETWEEN
--- 4. NOT IN
--- 5. IN
--- There are many more 
--- We can do calculations in WHERE Clause also.
--- We can add all mathematical and string operators operation in WHERE
+
 
