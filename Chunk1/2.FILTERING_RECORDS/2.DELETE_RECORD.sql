@@ -1,4 +1,4 @@
- CREATE TABLE cities (
+CREATE TABLE cities (
   name VARCHAR(50),
   country VARCHAR(50),
   population INTEGER,
@@ -14,15 +14,15 @@ VALUES
   ('Sao Paulo', 'Brzail', 20935000, 3043);
 
 
-SELECT * FROM cities
+
+------------------------------------------------- Delete Record with Where Clause in SQL --------------------------------------------------------
+
+-- KEWYORDS : 1. DELETE
+-- DELETE : THIS KEYWORD HELPS TO DELETE A ROW
+
+
 DELETE FROM cities WHERE name = 'Tokyo'  -- IT WILL DELETE THE ROW WHERE THE NAME IS TOKYO
 
-SELECT * FROM cities
-DELETE FROM cities WHERE country = 'India' ;
-
-SELECT * FROM cities
 
 
--- KEWYORD
--- DELETE
--- DELETE : THIS KEYWORD HELPS TO DELETE A ROW
+
