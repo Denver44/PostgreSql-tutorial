@@ -4,7 +4,7 @@ CREATE TABLE photos(
   user_id INTEGER REFERENCES users(id) 
 );
 
--- THis will be Oaky as we insert a photo  thats is tied to a user that exists
+-- THE BELOW INSETION QUERY WORKS FINE AS WE ARE INSERTING DATA FOR USER WHO ARE EXIST.
 
 INSERT INTO
   photos(url, user_id)
@@ -15,7 +15,7 @@ VALUES
   ('http://img4.jpg', 3);
 
 
--- We insert a photo that refers to a user that doesn't
+-- THE BELOW INSERTION QUERY WILL NOT WORK AS THERE IS NO USER EXIST WITH SUCH ID.
 
 INSERT INTO
   photos(url, user_id)
@@ -24,12 +24,10 @@ VALUES
 
 
 
--- We insert a photo that isn't tied to any user
+-- THE BELOW INSERTION QUERY WILL WORK AS WE CAN INSERT PHOTO ID WITH ID as NULL.
 
 INSERT INTO
   photos(url, user_id)
 VALUES
   ('http://img55.jpg', null);
 
-
--- This okay it will not throw error by the user_id wll be NULL and it will be not associated with any user and NULL is very Special Keyword in SQL 

@@ -1,3 +1,10 @@
+
+
+------------------------------------------------- BASICS OF FOREGIN KEY  --------------------------------------------------------
+-- KEYWORDS
+-- 1. REFERNCES : HERE USING REFERNCE KEYWORD IN TABLE WE CAN CREATE A RELATIONSHIP BETWEEN TWO TABLE.
+
+
 CREATE TABLE users(
   id SERIAL PRIMARY KEY , 
   username VARCHAR(50)
@@ -23,24 +30,8 @@ VALUES
 
 SELECT * FROM  photos
 
-id	url	          user_id
-1	http://img1.jpg	  3
-2	http://img2.jpg	  1
-3	http://img3.jpg	  2
-4	http://img4.jpg	  3
 
 
--- KEYWORDS
--- 1. REFERNCES Here using refernce keyword we can set the realtionshup between two table
+-- HERE WE HAVE JOIN THE TWO TABLE ON THE BASIS OF user.id.
 
-
-
--- MYSQL SYNATX FOR FOREIGN KEY
-
--- CREATE TABLE photoes (
---     id int NOT NULL PRIMARY KEY,
---     url VARCHAR(200),
---     user_id int FOREIGN KEY REFERENCES users(id)
--- );
-
--- IN POSTGRES NO NEED TO TYPE FOREGIN KEY WORD BUT IN MYSQL WE HAVE TO MENTION IT.
+SELECT user_id, username, url FROM photos  JOIN users on photos.user_id = users.id

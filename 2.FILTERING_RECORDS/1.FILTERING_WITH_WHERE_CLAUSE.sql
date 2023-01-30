@@ -16,8 +16,6 @@ VALUES
 
 ------------------------------------------------- FILTERNG Record with Where Clause in SQL --------------------------------------------------------
 
-
-
 -- KEYWORDS : 1. WHERE
 -- WHERE is used to filter data
 
